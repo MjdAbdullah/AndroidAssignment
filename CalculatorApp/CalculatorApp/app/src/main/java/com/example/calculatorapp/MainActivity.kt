@@ -12,10 +12,10 @@ class MainActivity : AppCompatActivity() {
     private lateinit var tvView : TextView
     private lateinit var tvOpr : TextView
     private lateinit var clMain : ConstraintLayout
-    var Ruselt = ""
-    private var TheOpr = ""
-    var Decimal = false
-    var PN = false
+    var Ruselt = "" 
+    private var TheOpr = ""         // Variable for save the user operations
+    var Decimal = false             // Variable to show if it display Int or Decsimal number  
+    var PN = false                  // Variable to show if the user negative numbers
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -46,24 +46,16 @@ class MainActivity : AppCompatActivity() {
         bZero.setOnClickListener { UpdateText("0",0) }
 
         val bAdd = findViewById<Button>(R.id.bAdd)
-        bAdd.setOnClickListener {
-            UpdateText("+",0)
-        }
+        bAdd.setOnClickListener { UpdateText("+",0) }
 
         val bSub = findViewById<Button>(R.id.bSub)
-        bSub.setOnClickListener {
-            UpdateText("-",0)
-        }
+        bSub.setOnClickListener { UpdateText("-",0) }
 
         val bDiv = findViewById<Button>(R.id.bDivision)
-        bDiv.setOnClickListener {
-            UpdateText("/",0)
-        }
+        bDiv.setOnClickListener { UpdateText("/",0) }
 
         val bMult = findViewById<Button>(R.id.bMult)
-        bMult.setOnClickListener {
-            UpdateText("*",0)
-        }
+        bMult.setOnClickListener { UpdateText("*",0) }
 
         val bDel = findViewById<Button>(R.id.bDelet)
         bDel.setOnClickListener{ UpdateText("",1) }
@@ -72,7 +64,6 @@ class MainActivity : AppCompatActivity() {
         bClear.setOnClickListener {
             TheOpr = ""
             tvView.text = ""
-
         }
 
         val bPN = findViewById<Button>(R.id.bPN)
@@ -102,7 +93,8 @@ class MainActivity : AppCompatActivity() {
         }
     }// onCreate
     //---------------------------------------------------------------------------------------------
-    // This function for update the text view
+    // All the user input will stor in (TheOpr) until the user click button = then will send it to Calculator() method. 
+    // So, this function for update the text view and the (TheOpr) variable.
     private fun UpdateText(string : String , opre : Int ) {
         // 0 for add in the text , 1 for remove from the text
         when(opre){
@@ -135,7 +127,7 @@ class MainActivity : AppCompatActivity() {
         }
     }
     //---------------------------------------------------------------------------------------------
-    // This function
+    // This function Calculator the user input, be read the (TheOpr) variable.
     private fun Calculator(S : String): Double{
             for(i in 0..S.length-1){
                 if(S[i] == 'A'){
@@ -153,6 +145,7 @@ class MainActivity : AppCompatActivity() {
                 }
             }
             for(i in 0..S.length-1){
+                // Check the user cannot divide by zero
                 if(S[i] == '/'){
                     if (S.substring(i+1,S.length).equals("0")){
                         Snackbar.make(clMain,"Can't Divide by 0",Snackbar.LENGTH_SHORT).show()
