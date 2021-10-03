@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">App2in1</string>
+    <string name="page_name">Main Activity</string>
+    <string name="preference_file_key">com.example.helloworld.PREFERENCE_FILE_KEY</string>
+</resources>
