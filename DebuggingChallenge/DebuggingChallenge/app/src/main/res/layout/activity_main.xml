@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="64dp"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/llMain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/etUsername"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Username"
+            android:inputType="textPersonName"
+            android:minHeight="48dp" />
+
+        <TextView
+            android:id="@+id/tvName1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=" • 5 to 15 characters"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/tvName2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=" • no numbers"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/tvName3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=" • no spaces or special characters"
+            android:textSize="10sp" />
+
+        <EditText
+            android:id="@+id/etPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:minHeight="48dp" />
+
+        <TextView
+            android:id="@+id/tvPass1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=" • at least 8 characters long"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/tvPass2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=" • must contain an uppercase letter"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/tvPass3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=" • must contain a number"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/tvPass4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=" • must contain a special character (!,@,#,$,%)"
+            android:textSize="10sp" />
+
+        <EditText
+            android:id="@+id/etConfirmPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:hint="Confirm Password"
+            android:inputType="textPassword"
+            android:minHeight="48dp" />
+
+        <Button
+            android:id="@+id/btSubmit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Submit"
+            android:layout_marginTop="8dp"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:background="@color/white"
+        android:text="Active Users:"
+        android:id="@+id/tvActiveUsers"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
