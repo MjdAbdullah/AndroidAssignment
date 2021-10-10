@@ -1,0 +1,9 @@
+How did you approach the UI?
+with multple (LinearLayout)
+
+How did you approach the API?
+URL code 
+ URL("URLName").readText(Charsets.UTF_8)
+ 
+What was difficult or easy?
+I had some problems in some parts but I was able to solve it and understand it 
