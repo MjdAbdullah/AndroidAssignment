@@ -1,0 +1,6 @@
+What was difficult? 
+Use recycler view with API data. 
+ 
+What was easy? 
+Same the previous practice but we change the data class. 
+Add method post.

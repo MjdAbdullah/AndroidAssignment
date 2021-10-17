@@ -1,0 +1,5 @@
+What was difficult?
+Rotate screen with save value 
+
+What was easy?
+XML and use recycler view
