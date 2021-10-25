@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StudentDetails>
+
+    <Student>
+        <id>1</id>
+        <name>Sachin Kumar</name>
+        <marks>50</marks>
+    </Student>
+
+    <Student>
+        <id>2</id>
+        <name>Rahul Kumar</name>
+        <marks>60</marks>
+    </Student>
+
+    <Student>
+        <id>3</id>
+        <name>John Mike</name>
+        <marks>70</marks>
+    </Student>
+
+    <Student>
+        <id>4</id>
+        <name>Ajay Kumar</name>
+        <marks>45</marks>
+    </Student>
+
+    <Student>
+        <id>5</id>
+        <name>Toni Nayer</name>
+        <marks>55</marks>
+    </Student>
+
+    <Student>
+        <id>6</id>
+        <name>Mr Bony</name>
+        <marks>42</marks>
+    </Student>
+
+    <Student>
+        <id>7</id>
+        <name>Raj Kumar</name>
+        <marks>30</marks>
+    </Student>
+
+    <Student>
+        <id>8</id>
+        <name>Rahul Kumar</name>
+        <marks>60</marks>
+    </Student>
+
+    <Student>
+        <id>9</id>
+        <name>John Mike</name>
+        <marks>70</marks>
+    </Student>
+
+    <Student>
+        <id>10</id>
+        <name>Sachin Kumar</name>
+        <marks>50</marks>
+    </Student>
+
+    <Student>
+        <id>11</id>
+        <name>Rahul Kumar</name>
+        <marks>60</marks>
+    </Student>
+
+    <Student>
+        <id>12</id>
+        <name>John Mike</name>
+        <marks>70</marks>
+    </Student>
+
+</StudentDetails>
