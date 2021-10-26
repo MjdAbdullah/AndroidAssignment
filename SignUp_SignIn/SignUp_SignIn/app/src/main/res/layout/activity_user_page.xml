@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UserPage">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:orientation="vertical"
+        android:paddingTop="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:textColor="@color/black"
+            android:textSize="30dp"
+            android:textAlignment="center"
+            android:layout_marginBottom="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Welcome" />
+
+        <TextView
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:layout_margin="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Your Details :" />
+
+        <TextView
+            android:id="@+id/tvName"
+            android:textColor="@color/black"
+            android:textSize="15dp"
+            android:paddingStart="5dp"
+            android:layout_margin="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Name" />
+
+        <TextView
+            android:id="@+id/tvEmail"
+            android:textColor="@color/black"
+            android:textSize="15dp"
+            android:paddingStart="5dp"
+            android:layout_margin="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Email" />
+
+        <TextView
+            android:id="@+id/tvPhone"
+            android:textColor="@color/black"
+            android:textSize="15dp"
+            android:paddingStart="5dp"
+            android:layout_margin="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Phone" />
+
+        <TextView
+            android:id="@+id/tvPassword"
+            android:textColor="@color/black"
+            android:textSize="15dp"
+            android:layout_margin="5dp"
+            android:paddingStart="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Password" />
+
+        <Button
+            android:id="@+id/bLogOut"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Log out" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
