@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">SharedPreferences</string>
+    <string name="preference_file_key">com.example.sharedpreferences.PREFERENCE_FILE_KEY</string>
+</resources>
